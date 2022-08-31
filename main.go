@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/Yideg/test_go/models"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"test_go/models"
 )
 
 func main() {
@@ -15,6 +15,7 @@ func main() {
 	router.Run(":8080")
 }
 
+//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
 func getAlbums(c *gin.Context) {
 	new := &models.Test{
 		Message: "Get all Albums",

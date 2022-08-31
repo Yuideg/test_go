@@ -1,4 +1,4 @@
-module github.com/Yideg/test_go
+module test_go
 // +heroku goVersion go1.18
 go 1.18
 
