@@ -11,8 +11,11 @@ func main() {
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumByID)
-	router.GET("/albums", postAlbums)
+	//router.GET("/albums", postAlbums)
 	port := os.Getenv("PORT")
+	if port == "" {
+		port = "9090"
+	}
 	router.Run(":" + port)
 }
 
