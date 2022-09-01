@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/Yideg/test_go/models"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"test_go/models"
 )
 
 func main() {
