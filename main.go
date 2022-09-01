@@ -4,6 +4,7 @@ import (
 	"github.com/Yideg/test_go/models"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -11,8 +12,8 @@ func main() {
 	router.GET("/albums", getAlbums)
 	router.GET("/albums/:id", getAlbumByID)
 	router.GET("/albums", postAlbums)
-
-	router.Run(":8080")
+	port := os.Getenv("PORT")
+	router.Run(":" + port)
 }
 
 //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
