@@ -1,1 +1,1 @@
-web:test_go
+web: test_go
